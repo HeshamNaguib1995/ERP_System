@@ -1,0 +1,26 @@
+<table>
+  <thead>
+    <tr>
+      <th>ID</th>
+      <th>Full Name</th>
+      <th>Address</th>
+      <th>City</th>
+      <th>Salary</th>
+      <th>Bank Name</th>
+      <th>Position</th>
+      <th>Account No</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor="let emp of employees">
+      <td>{{ emp.id }}</td>
+      <td>{{ emp.fullName }}</td>
+      <td>{{ emp.address }}</td>
+      <td>{{ emp.cityName }}</td>
+      <td>{{ emp.salary }}</td>
+      <td>{{ emp.bankName }}</td>
+      <td>{{ emp.positionName }}</td>
+      <td>{{ emp.accountNo }}</td>
+    </tr>
+  </tbody>
+</table>
