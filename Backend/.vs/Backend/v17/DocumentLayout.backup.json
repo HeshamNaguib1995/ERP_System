@@ -1,112 +1,119 @@
 {
   "Version": 1,
-  "WorkspaceRootPath": "E:\\ERP System\\Backend\\",
+  "WorkspaceRootPath": "E:\\ERP System\\ERP_System\\Backend\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|e:\\erp system\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Migrations\\20251102191650_Users-Edit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20251102191650_Users-Edit.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|e:\\erp system\\erp_system\\backend\\infrastructure\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|e:\\erp system\\erp_system\\backend\\domain\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\refreshtoken.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|e:\\erp system\\erp_system\\backend\\domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\user.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|e:\\erp system\\erp_system\\backend\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "RelativeMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|solutionrelative:backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|e:\\erp system\\erp_system\\backend\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
       "RelativeMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|e:\\erp system\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|e:\\erp system\\erp_system\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\backend\\application\\usecases\\empservice\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\erp_system\\backend\\application\\usecases\\empservice\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|solutionrelative:application\\usecases\\empservice\\employeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\backend\\application\\dtos\\responses\\employeeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\erp_system\\backend\\application\\dtos\\responses\\employeeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|solutionrelative:application\\dtos\\responses\\employeeresponse.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|e:\\erp system\\backend\\domain\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|e:\\erp system\\erp_system\\backend\\domain\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\country.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|e:\\erp system\\backend\\domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|e:\\erp system\\erp_system\\backend\\domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\employee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|e:\\erp system\\backend\\infrastructure\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|e:\\erp system\\erp_system\\backend\\infrastructure\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\employeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|e:\\erp system\\backend\\domain\\entities\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|e:\\erp system\\erp_system\\backend\\domain\\entities\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\position.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|e:\\erp system\\backend\\infrastructure\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\datacontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162643_EditEmployeeTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162643_EditEmployeeTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20251102162643_EditEmployeeTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162529_EditEmployeeTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162529_EditEmployeeTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20251102162529_EditEmployeeTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162158_EditEmployeeTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162158_EditEmployeeTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20251102162158_EditEmployeeTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102160817_EditEmployeeTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102160817_EditEmployeeTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20251102160817_EditEmployeeTable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162051_EditEmployeeTable2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162051_EditEmployeeTable2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:Infrastructure\\Migrations\\20251102162051_EditEmployeeTable2.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\backend\\application\\usecases\\empservice\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\erp_system\\backend\\application\\usecases\\empservice\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|solutionrelative:application\\usecases\\empservice\\iemployeeservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\backend\\application\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\erp_system\\backend\\application\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iemployeerepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|e:\\erp system\\backend\\domain\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|e:\\erp system\\erp_system\\backend\\domain\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\city.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|e:\\erp system\\backend\\infrastructure\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|e:\\erp system\\erp_system\\backend\\infrastructure\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|e:\\erp system\\backend\\backend\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|e:\\erp system\\erp_system\\backend\\backend\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|solutionrelative:backend\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|e:\\erp system\\backend\\backend\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|e:\\erp system\\erp_system\\backend\\backend\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|solutionrelative:backend\\weatherforecast.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|e:\\erp system\\backend\\backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
-      "RelativeMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\Backend.csproj|solutionrelative:backend\\backend.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|e:\\erp system\\backend\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|e:\\erp system\\erp_system\\backend\\infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\infrastructure.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\backend\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
+      "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\erp_system\\backend\\application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|",
       "RelativeMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|solutionrelative:application\\application.csproj||{FA3CD31E-987B-443A-9B81-186104E8DAC1}|"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|e:\\erp system\\backend\\domain\\entities\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|e:\\erp system\\erp_system\\backend\\domain\\entities\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\bank.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|e:\\erp system\\backend\\infrastructure\\migrations\\20251101140721_intialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|e:\\erp system\\erp_system\\backend\\infrastructure\\migrations\\20251101140721_intialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20251101140721_intialize.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|e:\\erp system\\backend\\infrastructure\\migrations\\20251102162817_editemployeetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|e:\\erp system\\erp_system\\backend\\infrastructure\\migrations\\20251102162817_editemployeetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\migrations\\20251102162817_editemployeetable.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
@@ -117,7 +124,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 4,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Bookmark",
@@ -125,60 +132,76 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Country.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Domain\\Entities\\Country.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Country.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Domain\\Entities\\Country.cs",
-              "RelativeToolTip": "Domain\\Entities\\Country.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T10:56:22.499Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "Position.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Domain\\Entities\\Position.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Position.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Domain\\Entities\\Position.cs",
-              "RelativeToolTip": "Domain\\Entities\\Position.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-02T14:37:03.461Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
-              "Title": "DataContext.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Infrastructure\\DataContext.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\DataContext.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Infrastructure\\DataContext.cs",
-              "RelativeToolTip": "Infrastructure\\DataContext.cs",
-              "ViewState": "AgIAAAcAAAAAAAAAAAAqwBEAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-01T12:41:06.429Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20251102191650_Users-Edit.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Migrations\\20251102191650_Users-Edit.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251102191650_Users-Edit.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Migrations\\20251102191650_Users-Edit.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20251102191650_Users-Edit.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T19:16:50.721Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "RefreshToken.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\RefreshToken.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\RefreshToken.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\RefreshToken.cs",
+              "RelativeToolTip": "Domain\\Entities\\RefreshToken.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAAAAgAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T19:04:12.914Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "User.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\User.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\User.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\User.cs",
+              "RelativeToolTip": "Domain\\Entities\\User.cs",
+              "ViewState": "AgIAAAgAAAAAAAAAAAAywBMAAAAvAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T19:02:54.647Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "DataContext.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\DataContext.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\DataContext.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\DataContext.cs",
+              "RelativeToolTip": "Infrastructure\\DataContext.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAA6wA8AAAAuAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T12:41:06.429Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "appsettings.json",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Backend\\appsettings.json",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Backend\\appsettings.json",
               "RelativeDocumentMoniker": "Backend\\appsettings.json",
-              "ToolTip": "E:\\ERP System\\Backend\\Backend\\appsettings.json",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Backend\\appsettings.json",
               "RelativeToolTip": "Backend\\appsettings.json",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
               "WhenOpened": "2025-11-01T13:09:30.313Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 7,
               "Title": "Program.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Backend\\Program.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Backend\\Program.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Backend\\Program.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Backend\\Program.cs",
               "RelativeToolTip": "Backend\\Program.cs",
               "ViewState": "AgIAAAwAAAAAAAAAAAAcwBUAAAAbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -186,7 +209,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 6,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -196,11 +219,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 12,
               "Title": "EmployeeRepository.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Infrastructure\\Repositories\\EmployeeRepository.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Repositories\\EmployeeRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\EmployeeRepository.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Infrastructure\\Repositories\\EmployeeRepository.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Repositories\\EmployeeRepository.cs",
               "RelativeToolTip": "Infrastructure\\Repositories\\EmployeeRepository.cs",
               "ViewState": "AgIAAAoAAAAAAAAAAAASwBkAAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -209,10 +232,47 @@
             {
               "$type": "Document",
               "DocumentIndex": 4,
+              "Title": "Backend.csproj",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Backend\\Backend.csproj",
+              "RelativeDocumentMoniker": "Backend\\Backend.csproj",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Backend\\Backend.csproj",
+              "RelativeToolTip": "Backend\\Backend.csproj",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABSAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2025-11-01T12:37:17.901Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "Position.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\Position.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Position.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\Position.cs",
+              "RelativeToolTip": "Domain\\Entities\\Position.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAZAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-02T14:37:03.461Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "Country.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\Country.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Country.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\Country.cs",
+              "RelativeToolTip": "Domain\\Entities\\Country.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-01T10:56:22.499Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "EmployeeResponse.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Application\\DTOs\\Responses\\EmployeeResponse.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\DTOs\\Responses\\EmployeeResponse.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Responses\\EmployeeResponse.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Application\\DTOs\\Responses\\EmployeeResponse.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Application\\DTOs\\Responses\\EmployeeResponse.cs",
               "RelativeToolTip": "Application\\DTOs\\Responses\\EmployeeResponse.cs",
               "ViewState": "AgIAAAkAAAAAAAAAAAAUwBIAAAArAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -220,11 +280,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 8,
               "Title": "EmployeeService.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Application\\UseCases\\EmpService\\EmployeeService.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\UseCases\\EmpService\\EmployeeService.cs",
               "RelativeDocumentMoniker": "Application\\UseCases\\EmpService\\EmployeeService.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Application\\UseCases\\EmpService\\EmployeeService.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Application\\UseCases\\EmpService\\EmployeeService.cs",
               "RelativeToolTip": "Application\\UseCases\\EmpService\\EmployeeService.cs",
               "ViewState": "AgIAABEAAAAAAAAAAAAQwB4AAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -232,23 +292,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "20251102162158_EditEmployeeTable.cs",
               "DocumentMoniker": "E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162158_EditEmployeeTable.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251102162158_EditEmployeeTable.cs",
+              "RelativeDocumentMoniker": "..\\..\\Backend\\Infrastructure\\Migrations\\20251102162158_EditEmployeeTable.cs",
               "ToolTip": "E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162158_EditEmployeeTable.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20251102162158_EditEmployeeTable.cs",
+              "RelativeToolTip": "..\\..\\Backend\\Infrastructure\\Migrations\\20251102162158_EditEmployeeTable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-02T16:21:58.801Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 11,
               "Title": "Employee.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Domain\\Entities\\Employee.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\Employee.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Employee.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Domain\\Entities\\Employee.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\Employee.cs",
               "RelativeToolTip": "Domain\\Entities\\Employee.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAUwBYAAAATAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -256,23 +316,23 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "20251102162529_EditEmployeeTable.cs",
               "DocumentMoniker": "E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162529_EditEmployeeTable.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251102162529_EditEmployeeTable.cs",
+              "RelativeDocumentMoniker": "..\\..\\Backend\\Infrastructure\\Migrations\\20251102162529_EditEmployeeTable.cs",
               "ToolTip": "E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162529_EditEmployeeTable.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20251102162529_EditEmployeeTable.cs",
+              "RelativeToolTip": "..\\..\\Backend\\Infrastructure\\Migrations\\20251102162529_EditEmployeeTable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-02T16:25:29.234Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "20251102162817_EditEmployeeTable.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162817_EditEmployeeTable.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Migrations\\20251102162817_EditEmployeeTable.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251102162817_EditEmployeeTable.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162817_EditEmployeeTable.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Migrations\\20251102162817_EditEmployeeTable.cs",
               "RelativeToolTip": "Infrastructure\\Migrations\\20251102162817_EditEmployeeTable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -280,47 +340,47 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "20251102162643_EditEmployeeTable.cs",
               "DocumentMoniker": "E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162643_EditEmployeeTable.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251102162643_EditEmployeeTable.cs",
+              "RelativeDocumentMoniker": "..\\..\\Backend\\Infrastructure\\Migrations\\20251102162643_EditEmployeeTable.cs",
               "ToolTip": "E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162643_EditEmployeeTable.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20251102162643_EditEmployeeTable.cs",
+              "RelativeToolTip": "..\\..\\Backend\\Infrastructure\\Migrations\\20251102162643_EditEmployeeTable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-02T16:26:43.754Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "20251102160817_EditEmployeeTable.cs",
               "DocumentMoniker": "E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102160817_EditEmployeeTable.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251102160817_EditEmployeeTable.cs",
+              "RelativeDocumentMoniker": "..\\..\\Backend\\Infrastructure\\Migrations\\20251102160817_EditEmployeeTable.cs",
               "ToolTip": "E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102160817_EditEmployeeTable.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20251102160817_EditEmployeeTable.cs",
+              "RelativeToolTip": "..\\..\\Backend\\Infrastructure\\Migrations\\20251102160817_EditEmployeeTable.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-02T16:08:17.942Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "20251102162051_EditEmployeeTable2.cs",
               "DocumentMoniker": "E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162051_EditEmployeeTable2.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251102162051_EditEmployeeTable2.cs",
+              "RelativeDocumentMoniker": "..\\..\\Backend\\Infrastructure\\Migrations\\20251102162051_EditEmployeeTable2.cs",
               "ToolTip": "E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251102162051_EditEmployeeTable2.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20251102162051_EditEmployeeTable2.cs",
+              "RelativeToolTip": "..\\..\\Backend\\Infrastructure\\Migrations\\20251102162051_EditEmployeeTable2.cs",
               "ViewState": "AgIAABcAAAAAAAAAAAAIwCsAAAAkAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-02T16:20:51.492Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "IEmployeeService.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Application\\UseCases\\EmpService\\IEmployeeService.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\UseCases\\EmpService\\IEmployeeService.cs",
               "RelativeDocumentMoniker": "Application\\UseCases\\EmpService\\IEmployeeService.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Application\\UseCases\\EmpService\\IEmployeeService.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Application\\UseCases\\EmpService\\IEmployeeService.cs",
               "RelativeToolTip": "Application\\UseCases\\EmpService\\IEmployeeService.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -328,11 +388,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "IEmployeeRepository.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Application\\Interfaces\\IEmployeeRepository.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\Interfaces\\IEmployeeRepository.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IEmployeeRepository.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Application\\Interfaces\\IEmployeeRepository.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Application\\Interfaces\\IEmployeeRepository.cs",
               "RelativeToolTip": "Application\\Interfaces\\IEmployeeRepository.cs",
               "ViewState": "AgIAAAIAAAAAAAAAAAAgwAwAAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -340,11 +400,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "StartUp.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Infrastructure\\StartUp.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\StartUp.cs",
               "RelativeDocumentMoniker": "Infrastructure\\StartUp.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Infrastructure\\StartUp.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\StartUp.cs",
               "RelativeToolTip": "Infrastructure\\StartUp.cs",
               "ViewState": "AgIAAA4AAAAAAAAAAAAAABQAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -352,11 +412,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "City.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Domain\\Entities\\City.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\City.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\City.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Domain\\Entities\\City.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\City.cs",
               "RelativeToolTip": "Domain\\Entities\\City.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -364,11 +424,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 23,
               "Title": "EmployeeController.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Backend\\Controllers\\EmployeeController.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Backend\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "Backend\\Controllers\\EmployeeController.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Backend\\Controllers\\EmployeeController.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Backend\\Controllers\\EmployeeController.cs",
               "RelativeToolTip": "Backend\\Controllers\\EmployeeController.cs",
               "ViewState": "AgIAAAQAAAAAAAAAAAAowBEAAAAJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -376,11 +436,11 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 24,
               "Title": "WeatherForecast.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Backend\\WeatherForecast.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Backend\\WeatherForecast.cs",
               "RelativeDocumentMoniker": "Backend\\WeatherForecast.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Backend\\WeatherForecast.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Backend\\WeatherForecast.cs",
               "RelativeToolTip": "Backend\\WeatherForecast.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -388,35 +448,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
-              "Title": "Backend.csproj",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Backend\\Backend.csproj",
-              "RelativeDocumentMoniker": "Backend\\Backend.csproj",
-              "ToolTip": "E:\\ERP System\\Backend\\Backend\\Backend.csproj",
-              "RelativeToolTip": "Backend\\Backend.csproj",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAABSAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-01T12:37:17.901Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "Infrastructure.csproj",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Infrastructure\\Infrastructure.csproj",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Infrastructure.csproj",
               "RelativeDocumentMoniker": "Infrastructure\\Infrastructure.csproj",
-              "ToolTip": "E:\\ERP System\\Backend\\Infrastructure\\Infrastructure.csproj",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Infrastructure.csproj",
               "RelativeToolTip": "Infrastructure\\Infrastructure.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAABbAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-01T12:35:39.595Z"
+              "WhenOpened": "2025-11-01T12:35:39.595Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "20251101140721_intialize.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251101140721_intialize.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Migrations\\20251101140721_intialize.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251101140721_intialize.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Infrastructure\\Migrations\\20251101140721_intialize.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Migrations\\20251101140721_intialize.cs",
               "RelativeToolTip": "Infrastructure\\Migrations\\20251101140721_intialize.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
@@ -424,23 +473,24 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "Application.csproj",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Application\\Application.csproj",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\Application.csproj",
               "RelativeDocumentMoniker": "Application\\Application.csproj",
-              "ToolTip": "E:\\ERP System\\Backend\\Application\\Application.csproj",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Application\\Application.csproj",
               "RelativeToolTip": "Application\\Application.csproj",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAAASAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
-              "WhenOpened": "2025-11-01T12:13:09.748Z"
+              "WhenOpened": "2025-11-01T12:13:09.748Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "Bank.cs",
-              "DocumentMoniker": "E:\\ERP System\\Backend\\Domain\\Entities\\Bank.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\Bank.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Bank.cs",
-              "ToolTip": "E:\\ERP System\\Backend\\Domain\\Entities\\Bank.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\Bank.cs",
               "RelativeToolTip": "Domain\\Entities\\Bank.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA0AAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "OcpEMcXBXS0=",
+  "dgSpecHash": "LISG2oNaux8=",
   "success": true,
-  "projectFilePath": "E:\\ERP System\\Backend\\Infrastructure\\Infrastructure.csproj",
+  "projectFilePath": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Infrastructure.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\TOSHIBA\\.nuget\\packages\\azure.core\\1.38.0\\azure.core.1.38.0.nupkg.sha512",
     "C:\\Users\\TOSHIBA\\.nuget\\packages\\azure.identity\\1.11.4\\azure.identity.1.11.4.nupkg.sha512",

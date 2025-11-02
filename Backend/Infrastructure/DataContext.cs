@@ -12,6 +12,8 @@ namespace Infrastructure
         public DbSet<Country> Countries { get; set; }
         public DbSet<Bank> Banks { get; set; }
         public DbSet<Position> Positions { get; set; }  
+        public DbSet<RefreshToken> RefreshTokens { get; set; }
+        public DbSet<User> users { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
