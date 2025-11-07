@@ -1,26 +1,232 @@
-<table>
-  <thead>
-    <tr>
-      <th>ID</th>
-      <th>Full Name</th>
-      <th>Address</th>
-      <th>City</th>
-      <th>Salary</th>
-      <th>Bank Name</th>
-      <th>Position</th>
-      <th>Account No</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr *ngFor="let emp of employees">
-      <td>{{ emp.id }}</td>
-      <td>{{ emp.fullName }}</td>
-      <td>{{ emp.address }}</td>
-      <td>{{ emp.cityName }}</td>
-      <td>{{ emp.salary }}</td>
-      <td>{{ emp.bankName }}</td>
-      <td>{{ emp.positionName }}</td>
-      <td>{{ emp.accountNo }}</td>
-    </tr>
-  </tbody>
-</table>
+<button (click)="openAdd()" class="add-employee-btn">
+  <i class="fas fa-plus"></i> Add Employee
+</button>
+
+<div class="table-container">
+  <table>
+    <thead>
+      <tr>
+        <th>ID</th>
+        <th>Full Name</th>
+        <th>Address</th>
+        <th>City</th>
+        <th>Salary</th>
+        <th>Bank Name</th>
+        <th>Position</th>
+        <th>Account No</th>
+        <th> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let emp of employees">
+        <td>{{ emp.id }}</td>
+        <td>{{ emp.fullName }}</td>
+        <td>{{ emp.address }}</td>
+        <td>{{ emp.cityName }}</td>
+        <td>{{ emp.salary }}</td>
+        <td>{{ emp.bankName }}</td>
+        <td>{{ emp.positionName }}</td>
+        <td>{{ emp.accountNo }}</td>
+        <td>
+          <button (click)="GetEmployee(emp.id)" class="btn-action btn-primary">
+            <i class="fas fa-edit"></i> Edit
+          </button>
+          <button (click)="DeleteEmployee(emp.id)" class="btn-action btn-danger">
+            <i class="fas fa-trash"></i> Delete
+          </button>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+
+<ng-template #formTemplate let-modal>
+  <div class="modal-form">
+    <div class="modal-header">
+      <h3 class="form-title">Add New Employee</h3>
+      <button type="button" class="close-btn" (click)="resetForm()">&times;</button>
+    </div>
+    
+    <div class="form-container">
+      <form #f="ngForm" (ngSubmit)="onSubmit()" class="employee-form">
+        <div class="form-fields">
+          <!-- full name -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="fullName">Full Name <span class="required">*</span></label>
+              <input id="fullName" name="fullName" [(ngModel)]="employee.fullName" required class="form-control" placeholder="Enter full name"/>
+              <small class="helper-text">Enter employee's full legal name</small>
+            </div>
+          </div>
+
+          <!-- positionId (number) -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="position">Position ID</label>
+              <select id="position" name="positionId" type="number" [(ngModel)]="employee.positionId" class="form-control" placeholder="Select position ">
+                <option *ngFor="let position of Positions" [value]="position.id">{{ position.name }}</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- address -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="address">Address</label>
+              <input id="address" name="address" [(ngModel)]="employee.address" class="form-control" placeholder="Enter address"/>
+            </div>
+          </div>
+
+          <!-- cityId (number) -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="city">City</label>
+              <input list="cityList" 
+                     id="citySearch" 
+                     name="citySearch"
+                     [ngModel]="selectedCityName"
+                     (change)="onCitySelect($event)"
+                     class="form-control" 
+                     placeholder="Search and select city">
+              <input type="hidden" 
+                     name="cityId" 
+                     [(ngModel)]="employee.cityId">
+              <datalist id="cityList">
+                <option *ngFor="let city of Cities" [value]="city.name" data-id="{{city.id}}">
+              </datalist>
+              <small class="helper-text">Type to search cities</small>
+            </div>
+          </div>
+
+          <!-- bank select -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="bankName">Bank</label>
+              <select id="bankName" name="bankId" [(ngModel)]="employee.bankId" required class="form-control">
+
+                <option *ngFor="let bank of Banks" [value]="bank.id">{{ bank.name }}</option>
+              </select>
+              <small class="helper-text">Choose the employee's bank from the list</small>
+            </div>
+          </div>
+
+          <!-- account number -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="accountNo">Account Number <span class="required">*</span></label>
+              <input id="accountNo" name="accountNo" [(ngModel)]="employee.accountNo" required class="form-control" placeholder="Enter account number"/>
+            </div>
+          </div>
+
+          <!-- salary -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="salary">Salary</label>
+              <input id="salary" name="salary" type="number" [(ngModel)]="employee.salary" class="form-control" placeholder="Enter salary"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <div class="form-actions">
+            <button type="button" class="btn btn-secondary" (click)="resetForm()">Cancel</button>
+            <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</ng-template>
+<ng-template #EdiForm let-modal>
+  <div class="modal-form">
+    <div class="modal-header">
+      <h3 class="form-title">Edit Employee</h3>
+      <button type="button" class="close-btn" (click)="resetForm();Editing = false;">&times;</button>
+    </div>
+    
+    <div class="form-container">
+      <form #f="ngForm" (ngSubmit)="onEditSubmit()" class="employee-form">
+        <div class="form-fields">
+          <!-- full name -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="fullName">Full Name <span class="required">*</span></label>
+              <input id="fullName" name="fullName" [(ngModel)]="EditEmployee.fullName" required class="form-control" placeholder="Enter full name"/>
+              <small class="helper-text">Enter employee's full legal name</small>
+            </div>
+          </div>
+
+          <!-- positionId (number) -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="position">Position ID</label>
+              <select id="position" name="positionId" type="number" [(ngModel)]="EditEmployee.positionId" class="form-control" placeholder="Select position ">
+                <option *ngFor="let position of Positions" [value]="position.id">{{ position.name }}</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- address -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="address">Address</label>
+              <input id="address" name="address" [(ngModel)]="EditEmployee.address" class="form-control" placeholder="Enter address"/>
+            </div>
+          </div>
+
+          <!-- cityId (number) -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="city">City</label>
+              <select id="cityList"  name = "cityId" [(ngModel)]="EditEmployee.cityId" required class="form-control">
+                <option *ngFor="let city of Cities" [value]="city.id" >{{city.name}}</option>
+                </select>
+              <small class="helper-text">Type to search cities</small>
+            </div>
+          </div>
+
+          <!-- bank select -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="bankName">Bank</label>
+              <select id="bankName" name="bankId" [(ngModel)]="EditEmployee.bankId" required class="form-control">
+
+                <option *ngFor="let bank of Banks" [value]="bank.id">{{ bank.name }}</option>
+              </select>
+              <small class="helper-text">Choose the employee's bank from the list</small>
+            </div>
+          </div>
+
+          <!-- account number -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="accountNo">Account Number <span class="required">*</span></label>
+              <input id="accountNo" name="accountNo" [(ngModel)]="EditEmployee.accountNo" required class="form-control" placeholder="Enter account number"/>
+            </div>
+          </div>
+
+          <!-- salary -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="salary">Salary</label>
+              <input id="salary" name="salary" type="number" [(ngModel)]="EditEmployee.salary" class="form-control" placeholder="Enter salary"/>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <div class="form-actions">
+            <button type="button" class="btn btn-secondary" (click)="resetForm();Editing = false;">Cancel</button>
+            <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</ng-template>
+<div *ngIf="openForm && !Editing" class="form-overlay">
+  <ng-container *ngTemplateOutlet="formTemplate"></ng-container>
+</div>
+<div *ngIf="Editing" class="form-overlay">
+  <ng-container *ngTemplateOutlet="EdiForm"></ng-container>
+</div>

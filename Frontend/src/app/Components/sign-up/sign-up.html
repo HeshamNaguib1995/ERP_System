@@ -1,1 +1,41 @@
-<p>sign-up works!</p>
+<form [formGroup]="signupForm" (ngSubmit)="onSubmit()" class="signup-form" novalidate>
+	<h2>Create an account</h2>
+
+	<div class="field">
+		<label for="fullName">Full Name</label>
+		<input id="fullName" formControlName="fullName" type="text" placeholder="Your full name" />
+		<span class="error" aria-live="polite">{{ getFieldError('fullName') }}</span>
+	</div>
+
+	<div class="field">
+		<label for="email">Email</label>
+		<input id="email" formControlName="email" type="email" placeholder="you@example.com" />
+		<span class="error" aria-live="polite">{{ getFieldError('email') }}</span>
+	</div>
+
+	<div class="field">
+		<label for="mobile">Mobile No.</label>
+		<input id="mobile" formControlName="mobile" type="tel" placeholder="+1234567890" />
+		<span class="error" aria-live="polite">{{ getFieldError('mobile') }}</span>
+	</div>
+
+	<div class="field">
+		<label for="password">Password</label>
+		<input id="password" formControlName="password" type="password" placeholder="Choose a password" />
+		<span class="error" aria-live="polite">{{ getFieldError('password') }}</span>
+	</div>
+
+	<div class="field">
+		<label for="confirmPassword">Confirm Password</label>
+		<input id="confirmPassword" formControlName="confirmPassword" type="password" placeholder="Repeat your password" />
+		<span class="error" aria-live="polite">{{ getFieldError('confirmPassword') }}</span>
+	</div>
+
+	<div *ngIf="serverError" class="error" style="text-align:center;">{{ serverError }}</div>
+
+	<div class="actions">
+		<button type="submit" class="btn" [disabled]="submitting">Sign Up</button>
+	</div>
+
+	<p class="note">By signing up you agree to our terms and privacy policy.</p>
+</form>

@@ -1,12 +1,106 @@
 [
   {
     "ContainingType": "ServerSide.Controllers.EmployeeController",
+    "Method": "AddEmployeesAsync",
+    "RelativePath": "api/Employee/AddEmployee",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "employee",
+        "Type": "Application.DTOs.Requests.EmployeeAdd",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerSide.Controllers.EmployeeController",
+    "Method": "DeleteEmployeeAsync",
+    "RelativePath": "api/Employee/DeleteEmployee",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerSide.Controllers.EmployeeController",
+    "Method": "GetBanksAsync",
+    "RelativePath": "api/Employee/GetBanks",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerSide.Controllers.EmployeeController",
+    "Method": "GetCitiesAsync",
+    "RelativePath": "api/Employee/Getcities",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerSide.Controllers.EmployeeController",
+    "Method": "GetEmployeeByIdAsync",
+    "RelativePath": "api/Employee/GetEmployeeById",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerSide.Controllers.EmployeeController",
     "Method": "GetEmployeesAsync",
     "RelativePath": "api/Employee/GetEmployees",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerSide.Controllers.EmployeeController",
+    "Method": "GetPositionsAsync",
+    "RelativePath": "api/Employee/GetPositions",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "ServerSide.Controllers.EmployeeController",
+    "Method": "UpdateEmployeeAsync",
+    "RelativePath": "api/Employee/UpdateEmployee",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "Emp",
+        "Type": "Application.DTOs.Requests.EmployeeUpdate",
+        "IsRequired": true
+      }
+    ],
     "ReturnTypes": []
   },
   {

@@ -1,0 +1,92 @@
+/* ...existing code... */
+.signup-form {
+	max-width: 420px;
+	margin: 24px auto;
+	padding: 20px;
+	background: #fff;
+	border: 1px solid #e0e0e0;
+	border-radius: 8px;
+	box-shadow: 0 2px 6px rgba(0,0,0,0.04);
+	font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+}
+
+.signup-form h2 {
+	margin: 0 0 12px;
+	font-size: 20px;
+	text-align: center;
+}
+
+.signup-form .field {
+	margin-bottom: 12px;
+	display: flex;
+	flex-direction: column;
+}
+
+.signup-form label {
+	font-size: 13px;
+	margin-bottom: 6px;
+	color: #333;
+}
+
+.signup-form input[type="text"],
+.signup-form input[type="email"],
+.signup-form input[type="tel"],
+.signup-form input[type="password"] {
+	padding: 10px 12px;
+	font-size: 14px;
+	border: 1px solid #cfcfcf;
+	border-radius: 6px;
+	outline: none;
+	transition: border-color .12s, box-shadow .12s;
+}
+
+.signup-form input:focus {
+	border-color: #6aa0ff;
+	box-shadow: 0 0 0 3px rgba(106,160,255,0.12);
+}
+
+.signup-form input.invalid {
+	border-color: #e06a6a;
+	box-shadow: none;
+}
+
+.signup-form .error {
+	color: #b00020;
+	font-size: 12px;
+	min-height: 16px;
+	margin-top: 6px;
+}
+
+.signup-form .actions {
+	margin-top: 8px;
+	text-align: center;
+}
+
+.signup-form .btn {
+	background: #0a66ff;
+	color: #fff;
+	border: none;
+	padding: 10px 16px;
+	border-radius: 6px;
+	cursor: pointer;
+	font-size: 15px;
+}
+
+.signup-form .btn:hover {
+	opacity: 0.95;
+}
+
+.signup-form .note {
+	margin-top: 10px;
+	font-size: 12px;
+	color: #666;
+	text-align: center;
+}
+
+/* Responsive */
+@media (max-width: 480px) {
+	.signup-form {
+		margin: 16px;
+		padding: 16px;
+	}
+}

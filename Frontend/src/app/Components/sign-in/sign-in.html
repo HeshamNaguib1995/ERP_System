@@ -1,20 +1,48 @@
-<h2>Sign In</h2>
-<form (ngSubmit)="onSubmit()" #signInForm="ngForm"  >
-    <a href="https://facebook.com" target="_blank" aria-label="Facebook">
-    <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-      <path d="M22 12a10 10 0 1 0-11.5 9.9v-7H8v-3h2.5V9.5c0-2.4 1.4-3.7 3.6-3.7 1 0 2 .2 2 .2v2.2h-1.1c-1.1 0-1.4.7-1.4 1.4V12H18l-.4 3h-2.6v7A10 10 0 0 0 22 12z"/>
-    </svg>
-  </a>
-    <a href="#" > <i class="bi bi-facebook"></i> </a>
-    <a href="https://www.fa-google.com" class="icon"> <i class="fa fa-google"></i> </a>
-    <a href="https://www.X.com" class="icon"> <i class="fa fa-twitter"></i> </a>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+</head>
+<body>
+    <div class="sign-in-container">
+      <div class="sign-in-box">
+        <h2>Sign In</h2>
+        
+        <div class="social-links">
+          <a href="https://facebook.com" target="_blank" class="social-btn facebook">
+            <i class="bi bi-facebook"></i>
+          </a>
+          <a href="https://google.com" target="_blank" class="social-btn google">
+            <i class="fa fa-google"></i>
+          </a>
+          <a href="https://twitter.com" target="_blank" class="social-btn twitter">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </div>
   
-  <div class ="SignInForm">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" ngModel required placeholder="Username"/>
-  </div>
-  <div>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" ngModel required placeholder="Password" />
-  </div>
-  <button type="submit" [disabled]="!signInForm.form.valid">Sign In</button>
+        <div class="divider">
+          <span>or</span>
+        </div>
+  
+        <form (ngSubmit)="onSubmit()" #signInForm="ngForm">
+          <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" name="username" ngModel required placeholder="Enter your username"/>
+          </div>
+          
+          <div class="form-group">
+            <label for="password">Password</label>
+            <input type="password" id="password" name="password" ngModel required placeholder="Enter your password"/>
+          </div>
+          
+          <button type="submit">Sign In</button>
+        </form>
+        <div class="signup-link">
+          Don't have an account? <a routerLink="/SignUp">Sign Up</a>
+        </div>
+      </div>
+    </div>
+</body>
+</html>
