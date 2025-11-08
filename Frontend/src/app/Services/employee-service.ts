@@ -14,7 +14,7 @@ import { EmployeeUpdate } from '../Models/employee-update';
 export class EmployeeService {
   private apiUrl = environment.apiUrl + 'Employee/';
    constructor(private http: HttpClient) {}
-    getAll(): Observable<Employee[]> {
+  getAll(): Observable<Employee[]> {
     return this.http.get<Employee[]>(this.apiUrl + 'GetEmployees');
   }
   getCities(): Observable<City[]> {
