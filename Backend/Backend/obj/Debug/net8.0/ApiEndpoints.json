@@ -104,6 +104,16 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Backend.Controllers.ProductController",
+    "Method": "GetProductsAsync",
+    "RelativePath": "api/Product/GetProducts",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Backend.Controllers.WeatherForecastController",
     "Method": "Get",
     "RelativePath": "WeatherForecast",

@@ -14,6 +14,9 @@ namespace Infrastructure
         public DbSet<Position> Positions { get; set; }  
         public DbSet<RefreshToken> RefreshTokens { get; set; }
         public DbSet<User> users { get; set; }
+        public DbSet<Product> Products { get; set; }
+        public DbSet<Brand> Brands { get; set; }
+        public DbSet<ProductCategory> ProductCategories { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

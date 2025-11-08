@@ -24,6 +24,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmployeeAdd"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/EmployeeAdd"
@@ -113,6 +118,11 @@
         ],
         "requestBody": {
           "content": {
+            "application/json-patch+json": {
+              "schema": {
+                "$ref": "#/components/schemas/EmployeeUpdate"
+              }
+            },
             "application/json": {
               "schema": {
                 "$ref": "#/components/schemas/EmployeeUpdate"
@@ -151,6 +161,18 @@
               "format": "int32"
             }
           }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Product/GetProducts": {
+      "get": {
+        "tags": [
+          "Product"
         ],
         "responses": {
           "200": {

@@ -1,13 +1,19 @@
+using Newtonsoft.Json;
+using Microsoft.AspNetCore.Mvc;
 using Infrastructure;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 
-builder.Services.AddControllers();
+builder.Services.AddControllers()
+                .AddNewtonsoftJson(
+                                    x => x.SerializerSettings.ReferenceLoopHandling = ReferenceLoopHandling.Ignore);
+
 // Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
+
 
 builder.Services.addInfraStructureServices(builder.Configuration);
 builder.Services.AddCors(options =>

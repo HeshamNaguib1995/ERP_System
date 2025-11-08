@@ -12,6 +12,6 @@ namespace Domain.Entities
         public int Id { get; set; }
         [MaxLength(120)]
         public string Name { get; set; }
-        public ICollection<Product> Products { get; set; }
+        public virtual ICollection<Product> Products { get; set; }
     }
 }
