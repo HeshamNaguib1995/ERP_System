@@ -1,0 +1,32 @@
+<p>product-component works!</p>
+  <table>
+    <thead>
+      <tr>
+        <th>id</th>
+        <th>name</th>
+        <th>productCategoryName</th>
+        <th>price</th>
+        <th>discount</th>
+        <th>brandName</th>
+        <th> </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let P of Products">
+        <td>{{ P.id }}</td>
+        <td>{{ P.name }}</td>
+        <td>{{ P.productCategoryName }}</td>
+        <td>{{ P.price }}</td>
+        <td>{{ P.discount }}</td>
+        <td>{{ P.brandName }}</td> 
+        <!-- <td>
+          <button (click)="GetEmployee(emp.id)" class="btn-action btn-primary">
+            <i class="fas fa-edit"></i> Edit
+          </button>
+          <button (click)="GetEmployee(emp.id)" class="btn-action btn-danger">
+            <i class="fas fa-trash"></i> Delete
+          </button>
+        </td>  -->
+      </tr>
+    </tbody>
+  </table>
