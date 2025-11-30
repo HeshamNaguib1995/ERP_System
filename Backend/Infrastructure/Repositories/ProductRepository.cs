@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Application.DTOs.Requests;
 using Application.DTOs.Responses;
 using Application.Interfaces;
 using Domain.Entities;
@@ -14,7 +15,6 @@ namespace Infrastructure.Repositories
 {
     public class ProductRepository : GenericRepository<Product>, IProductRepository
     {
-
         public ProductRepository(DataContext context) : base(context) { }
         public async Task<List<ProductResponseDto>> GetProductWithDetails()
         {
@@ -45,6 +45,11 @@ namespace Infrastructure.Repositories
                 PrDtoList.Add(ProductMaping(Pr));
             }
             return PrDtoList;
+        }
+
+        public Task<bool> UpdateProductAsync(ProductUpdate product)
+        {
+            throw new NotImplementedException();
         }
     }
 }

@@ -7,6 +7,7 @@ using System.Threading.Tasks;
 
 namespace Domain.Entities
 {
+    
     public class Employee
     {
         public int Id { get; set; }
@@ -23,6 +24,13 @@ namespace Domain.Entities
         public int? PositionId { get; set; }
         [MaxLength(200)]
         public string AccountNo {  get; set; }
+        [MaxLength(100)]
+        public Department? Department {  get; set; }
+        public int? DepartmentId { get; set; }
+        [MaxLength(100)]
+        public string? Email { get; set; }
+        [MaxLength(50)]
+        public string? password { get; set; }
 
     }
 }

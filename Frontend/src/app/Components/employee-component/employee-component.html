@@ -1,6 +1,16 @@
+
+<div class="search-bar">
+  <input
+    type="text"
+    placeholder="Search employees..."
+    [(ngModel)]="searchText"
+    (ngModelChange)="searchData()"
+    class="search-input"
+  />
 <button (click)="openAdd()" class="add-employee-btn">
   <i class="fas fa-plus"></i> Add Employee
 </button>
+</div>
 
 <div class="table-container">
   <table>
@@ -28,12 +38,14 @@
         <td>{{ emp.positionName }}</td>
         <td>{{ emp.accountNo }}</td>
         <td>
+          <span>
           <button (click)="GetEmployee(emp.id)" class="btn-action btn-primary">
             <i class="fas fa-edit"></i> Edit
           </button>
           <button (click)="DeleteEmployee(emp.id)" class="btn-action btn-danger">
             <i class="fas fa-trash"></i> Delete
           </button>
+          </span>
         </td>
       </tr>
     </tbody>
@@ -62,7 +74,7 @@
           <!-- positionId (number) -->
           <div class="form-row">
             <div class="form-group full-width">
-              <label for="position">Position ID</label>
+              <label for="position">Position</label>
               <select id="position" name="positionId" type="number" [(ngModel)]="employee.positionId" class="form-control" placeholder="Select position ">
                 <option *ngFor="let position of Positions" [value]="position.id">{{ position.name }}</option>
               </select>

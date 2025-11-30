@@ -1,12 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sign In</title>
-</head>
-<body>
-    <div class="sign-in-container">
+  <div class="sign-in-container">
       <div class="sign-in-box">
         <h2>Sign In</h2>
         
@@ -26,23 +18,21 @@
           <span>or</span>
         </div>
   
-        <form (ngSubmit)="onSubmit()" #signInForm="ngForm">
+        <form  #signInForm="ngForm">
           <div class="form-group">
             <label for="username">Username</label>
-            <input type="text" id="username" name="username" ngModel required placeholder="Enter your username"/>
+            <input type="text" id="username" name="username" [(ngModel)] = "username" required placeholder="Enter your username"/>
           </div>
           
           <div class="form-group">
             <label for="password">Password</label>
-            <input type="password" id="password" name="password" ngModel required placeholder="Enter your password"/>
+            <input type="password" id="password" name="password" [(ngModel)] = "password" required placeholder="Enter your password"/>
           </div>
           
-          <button type="submit">Sign In</button>
+          <button type="button" (click)="onButtonClick()">Sign In</button>
         </form>
         <div class="signup-link">
           Don't have an account? <a routerLink="/SignUp">Sign Up</a>
         </div>
       </div>
     </div>
-</body>
-</html>

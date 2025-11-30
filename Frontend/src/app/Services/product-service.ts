@@ -8,13 +8,14 @@ import { Product } from '../Models/product';
   providedIn: 'root'
 })
 export class ProductService {
+
+  private apiUrl = environment.apiUrl + '/Product';
+  constructor(private http: HttpClient) { }
   getProducts() {
     throw new Error('Method not implemented.');
   }
-  private apiUrl = environment.apiUrl + 'Product/';
-   constructor(private http: HttpClient) {}
-   getAll(): Observable<Product[]> {
-       return this.http.get<Product[]>(this.apiUrl + 'GetEmployees');
-       }
-       
+  getAll(): Observable<Product[]> {
+    return this.http.get<Product[]>(this.apiUrl + 'GetProducts');
+  }
+
 }

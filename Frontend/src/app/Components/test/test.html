@@ -1,0 +1,29 @@
+<div class="stats-container">
+  <div class="stat-card" *ngFor="let stat of stats">
+    <div class="stat-header">
+      <div class="icon">
+        <i [class]="stat.icon"></i>
+      </div>
+      <div class="title">{{ stat.title }}</div>
+    </div>
+
+    <div class="stat-body">
+      <!-- <div class="percentage">{{ stat.value | percent:'1.0-0' }}</div> -->
+      <div class="progress-bar">
+        <div
+          class="progress"
+          [style.width.%]="stat.value * 100"
+          [style.background]="stat.color"
+        ></div>
+      </div>
+    </div>
+
+    <div class="stat-footer">
+      <!-- <small [class.positive]="stat.change >= 0" [class.negative]="stat.change < 0">
+        <i class="fas" [ngClass]="stat.change >= 0 ? 'fa-arrow-up' : 'fa-arrow-down'"></i>
+        {{ stat.change | number:'1.0-1' }}%
+      </small> -->
+      <span>vs last week</span>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,54 @@
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <div class="sidebar">
+     <div class="profile">
+      <img src="p1.jpg" alt="Employee Photo" class="profile-img">
+      <div class="profile-info">
+        <h4 class="profile-name">Hesham Mohamed</h4>
+        <p class="profile-role">HR Manager</p>
+      </div>
+    </div>
+
+    <ul>
+      <li [class.active]="selectedSection === 'employee'"
+          (click)="selectSection('employee')"
+          title="Employee Management">
+        <i class="fas fa-users"></i>
+        <span class="label">Employee</span>
+      </li>
+
+      <li [class.active]="selectedSection === 'attendance'"
+          (click)="selectSection('attendance')"
+          title="Attendance">
+        <i class="fa-regular fa-calendar-check"></i>
+        <span class="label">Attendance</span>
+      </li>
+
+      <li [class.active]="selectedSection === 'payroll'"
+          (click)="selectSection('payroll')"
+          title="Payroll">
+        <i class="fas fa-money-check-alt"></i>
+        <span class="label">Payroll</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div *ngIf="selectedSection === 'employee'">
+      <h2>👨‍💼 Employee Management</h2>
+      <p>Manage employee profiles, roles, and departments.</p>
+      <app-employee-component></app-employee-component>
+    </div>
+
+    <div *ngIf="selectedSection === 'attendance'">
+      <h2>🗓️ Attendance Tracker</h2>
+      <app-attendance-component></app-attendance-component>
+    </div>
+
+    <div *ngIf="selectedSection === 'payroll'">
+      <h2>💰 Payroll System</h2>
+      <p>Handle salaries, bonuses, and deductions.</p>
+    </div>
+  </div>
+</div>

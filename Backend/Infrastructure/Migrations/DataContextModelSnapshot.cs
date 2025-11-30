@@ -22,6 +22,72 @@ namespace Infrastructure.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
+            modelBuilder.Entity("Domain.Entities.Attendance", b =>
+                {
+                    b.Property<int>("id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("id"));
+
+                    b.Property<TimeOnly>("CheckInTime")
+                        .HasColumnType("time");
+
+                    b.Property<TimeOnly>("CheckOutTime")
+                        .HasColumnType("time");
+
+                    b.Property<DateOnly>("DayDate")
+                        .HasColumnType("date");
+
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("status")
+                        .HasColumnType("int");
+
+                    b.HasKey("id");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.ToTable("Attendances");
+                });
+
+            modelBuilder.Entity("Domain.Entities.AttendanceMonthlySummary", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("EmployeeId")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Month")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalAbsent")
+                        .HasColumnType("int");
+
+                    b.Property<double>("TotalHoursWorked")
+                        .HasColumnType("float");
+
+                    b.Property<int>("TotalLate")
+                        .HasColumnType("int");
+
+                    b.Property<int>("TotalPresent")
+                        .HasColumnType("int");
+
+                    b.Property<int>("Year")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("EmployeeId");
+
+                    b.ToTable("AttendanceMonthlySummaries");
+                });
+
             modelBuilder.Entity("Domain.Entities.Bank", b =>
                 {
                     b.Property<int>("Id")
@@ -99,6 +165,24 @@ namespace Infrastructure.Migrations
                     b.ToTable("Countries");
                 });
 
+            modelBuilder.Entity("Domain.Entities.Department", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<string>("Name")
+                        .IsRequired()
+                        .HasMaxLength(150)
+                        .HasColumnType("nvarchar(150)");
+
+                    b.HasKey("Id");
+
+                    b.ToTable("Departments");
+                });
+
             modelBuilder.Entity("Domain.Entities.Employee", b =>
                 {
                     b.Property<int>("Id")
@@ -123,6 +207,13 @@ namespace Infrastructure.Migrations
                     b.Property<int>("CityId")
                         .HasColumnType("int");
 
+                    b.Property<int?>("DepartmentId")
+                        .HasColumnType("int");
+
+                    b.Property<string>("Email")
+                        .HasMaxLength(100)
+                        .HasColumnType("nvarchar(100)");
+
                     b.Property<string>("FullName")
                         .IsRequired()
                         .HasMaxLength(120)
@@ -134,11 +225,21 @@ namespace Infrastructure.Migrations
                     b.Property<float>("Salary")
                         .HasColumnType("real");
 
+                    b.Property<string>("password")
+                        .HasMaxLength(50)
+                        .HasColumnType("nvarchar(50)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("BankId");
 
                     b.HasIndex("CityId");
+
+                    b.HasIndex("DepartmentId");
+
+                    b.HasIndex("Email")
+                        .IsUnique()
+                        .HasFilter("[Email] IS NOT NULL");
 
                     b.HasIndex("PositionId");
 
@@ -309,6 +410,28 @@ namespace Infrastructure.Migrations
                     b.ToTable("users");
                 });
 
+            modelBuilder.Entity("Domain.Entities.Attendance", b =>
+                {
+                    b.HasOne("Domain.Entities.Employee", "Employee")
+                        .WithMany()
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Employee");
+                });
+
+            modelBuilder.Entity("Domain.Entities.AttendanceMonthlySummary", b =>
+                {
+                    b.HasOne("Domain.Entities.Employee", "Employee")
+                        .WithMany()
+                        .HasForeignKey("EmployeeId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Employee");
+                });
+
             modelBuilder.Entity("Domain.Entities.City", b =>
                 {
                     b.HasOne("Domain.Entities.Country", "Country")
@@ -334,6 +457,10 @@ namespace Infrastructure.Migrations
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
+                    b.HasOne("Domain.Entities.Department", "Department")
+                        .WithMany()
+                        .HasForeignKey("DepartmentId");
+
                     b.HasOne("Domain.Entities.Position", "Position")
                         .WithMany("employees")
                         .HasForeignKey("PositionId");
@@ -341,6 +468,8 @@ namespace Infrastructure.Migrations
                     b.Navigation("Bank");
 
                     b.Navigation("City");
+
+                    b.Navigation("Department");
 
                     b.Navigation("Position");
                 });

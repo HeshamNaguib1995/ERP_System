@@ -12,10 +12,10 @@ namespace Application.UseCases.EmpService
 {
     public class EmployeeService : IEmployeeService
     {
-        private readonly IEmployeeRepository _employeeService;
+        private readonly IEmployeeRepository _employeeRepo;
         public EmployeeService(IEmployeeRepository employeeService)
         {
-            _employeeService = employeeService;
+            _employeeRepo = employeeService;
         }
 
         public async Task<EmployeeResponse> AddEmployee(EmployeeAdd employee)
@@ -28,13 +28,13 @@ namespace Application.UseCases.EmpService
             emp.CityId = employee.CityId;
             emp.PositionId = employee.PositionId;
             emp.BankId = employee.BankId;
-            var Res = await _employeeService.AddEmployee(emp);
+            var Res = await _employeeRepo.AddEmployee(emp);
             return await EmployeeMapping(Res);
         }
 
         public async Task<bool> DeleteEmployee(int id)
         {
-            return await _employeeService.Delete(id);
+            return await _employeeRepo.Delete(id);
         }
 
         public async Task<EmployeeResponse> EmployeeMapping(Employee employee)
@@ -63,35 +63,35 @@ namespace Application.UseCases.EmpService
 
         public async Task<List<Bank>> GetBanks()
         {
-            return await _employeeService.GetBanks();
+            return await _employeeRepo.GetBanks();
         }
 
         public async Task<List<City>> GetCities()
         {
-            return await _employeeService.GetCities();
+            return await _employeeRepo.GetCities();
         }
 
         public async Task<Employee> GetEmployeeById(int id)
         {
-            var res = await _employeeService.GetById(id);
+            var res = await _employeeRepo.GetById(id);
             return res;
         }
 
         public async Task<List<EmployeeResponse>> GetEmployees()
         {
-            var Emps = await _employeeService.getData();
+            var Emps = await _employeeRepo.getData();
 
             return await employeeResponses(Emps);
         }
 
         public async Task<List<Position>> GetPositions()
         {
-            return await _employeeService.GetPositions();
+            return await _employeeRepo.GetPositions();
         }
 
         public async Task<bool> UpdateEmployee(EmployeeUpdate employee)
         {
-            return await _employeeService.Update(employee);
+            return await _employeeRepo.Update(employee);
         }
     }
 }

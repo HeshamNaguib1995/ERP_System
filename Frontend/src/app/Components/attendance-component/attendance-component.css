@@ -1,0 +1,148 @@
+.page-container {
+  padding: 20px;
+  font-family: Arial;
+}
+
+/* Tabs Wrapper */
+.tabs-wrapper {
+  margin-bottom: 25px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+/* Tabs container */
+.tabs-container {
+  position: relative;
+  background: #f3f4f6;
+  padding: 6px;
+  border-radius: 12px;
+  display: inline-flex;
+  gap: 5px;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.06);
+}
+
+/* Tab Buttons */
+.tab-btn {
+  padding: 10px 24px;
+  font-size: 15px;
+  border: none;
+  background: transparent;
+  border-radius: 8px;
+  cursor: pointer;
+  position: relative;
+  z-index: 5;
+  color: #555;
+  font-weight: 500;
+  transition: all 0.25s ease;
+}
+
+/* Active Tab */
+.tab-btn.active {
+  color: #fff;
+  font-weight: 600;
+}
+
+/* Hover effect */
+.tab-btn:hover {
+  color: #000;
+}
+
+/* Moving background indicator */
+.tab-indicator {
+  position: absolute;
+  top: 6px;
+  width: 50%;
+  height: calc(100% - 12px);
+  background: #007bff;
+  border-radius: 8px;
+  z-index: 1;
+  transition: left 0.3s ease;
+}
+
+
+/* Date row */
+.date-row {
+  background: #f8f9fa;
+  padding: 12px 18px;
+  border-radius: 10px;
+  width: fit-content;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+
+.date-row input[type="date"] {
+  padding: 10px 14px;
+  font-size: 15px;
+  border: 2px solid #dcdcdc;
+  border-radius: 8px;
+  background-color: #ffffff;
+  transition: all 0.25s ease-in-out;
+  outline: none;
+  cursor: pointer;
+
+  /* Makes the input text readable */
+  color: #333;
+}
+.date-row input[type="date"]:hover {
+  border-color: #a6a6a6;
+}
+
+/* Focus effect */
+.date-row input[type="date"]:focus {
+  border-color: #007bff;
+  box-shadow: 0 0 4px rgba(0, 123, 255, 0.4);
+}
+
+/* Style calendar icon on Chrome/Edge */
+.date-row input[type="date"]::-webkit-calendar-picker-indicator {
+  cursor: pointer;
+  filter: invert(40%) sepia(20%) saturate(1000%) hue-rotate(200deg);
+  opacity: 0.8;
+  width: 22px;
+  height: 22px;
+  transition: 0.2s;
+}
+.date-row input[type="date"]::-webkit-calendar-picker-indicator:hover {
+  opacity: 1;
+  transform: scale(1.1);
+}
+/* Table */
+.attendance-table {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  background: #fff;
+  font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+.attendance-table th
+{
+      background: linear-gradient(to bottom, #2563eb, #1d4ed8);
+  color: white;
+  font-weight: 600;
+  font-size: 0.95rem;
+  padding: 16px;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  border: none;
+} 
+.attendance-table td {
+  padding: 16px;
+  border: 1px solid #e5e7eb;
+  border-top: none;
+  font-size: 0.95rem;
+  color: #1f2937
+}
+.attendance-table tr:last-child td:first-child {
+  border-bottom-left-radius: 12px;
+}
+
+.attendance-table tr:last-child td:last-child {
+  border-bottom-right-radius: 12px;
+}
+
+.attendance-table tr:hover {
+  background-color: #f1f5f9;
+  transform: scale(1.002);
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+  transition: all 0.2s ease;
+}

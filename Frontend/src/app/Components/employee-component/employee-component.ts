@@ -12,31 +12,38 @@ import { EmployeeUpdate } from '../../Models/employee-update';
 @Component({
   selector: 'app-employee-component',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule,FormsModule],
   templateUrl: './employee-component.html',
   styleUrls: ['./employee-component.css']
 })
 export class EmployeeComponent implements OnInit {
   employees: Employee[] = [];
+  employeesSearch: Employee[] = [];
   Banks: Bank[] = [];
   Cities : City[] = [];
   Positions : Position[] = [];
+  searchText: string = '';
   employee: EmployeeAdd = {} as EmployeeAdd; // use EmployeeAdd
   EditEmployee: EmployeeUpdate = {} as EmployeeUpdate;
   openForm = false;
   selectedCityName: string = '';
-  Editing = false
+  Editing = false;
   constructor(private employeeService: EmployeeService) {}
 
   ngOnInit() {
     this.loadEmployees();
+    this.GetFormData();
   }
 
   loadEmployees() {
     this.employeeService.getAll().subscribe((data) => {
       this.employees = data;
+      this.employeesSearch = data;
     });
-    this.employeeService.getBanks().subscribe((data) => {
+  }
+  GetFormData()
+  {
+      this.employeeService.getBanks().subscribe((data) => {
       this.Banks = data;
       console.log('Banks loaded:', this.Banks);
     });
@@ -49,8 +56,15 @@ export class EmployeeComponent implements OnInit {
       console.log('Positions loaded:', this.Positions);
     });
   }
-
+  searchData() 
+  {
+    this.employees = this.employeesSearch.filter(
+      emp => emp.fullName.toLowerCase().includes(this.searchText.toLowerCase())||
+             emp.positionName.toLowerCase().includes(this.searchText.toLowerCase())||
+             emp.bankName.toLowerCase().includes(this.searchText.toLowerCase())
+    )          // reload all if search is empty
   // open a fresh form for adding
+    }
   openAdd() {
     this.employee = {} as EmployeeAdd;
     this.openForm = true;
@@ -68,7 +82,8 @@ export class EmployeeComponent implements OnInit {
       this.employeeService.update(this.EditEmployee).subscribe({
         next: (res) => {
           alert('Employee Updated successfully');  
-          this.resetForm();     
+          this.resetForm();    
+          this.loadEmployees(); 
     }});
     }
   }
@@ -76,7 +91,9 @@ export class EmployeeComponent implements OnInit {
   {
     console.log("delete working");
         this.employeeService.Delete(id).subscribe({
-            next: (res) => {alert("Employee Deleted Successfully");}});
+            next: (res) => {alert("Employee Deleted Successfully");
+              this.loadEmployees();
+            }});
   }
   // submit EmployeeAdd to service
   onSubmit() {
@@ -92,7 +109,8 @@ export class EmployeeComponent implements OnInit {
       this.employeeService.create(this.employee).subscribe({
         next: (res) => {
           alert('Employee added successfully');  
-          this.resetForm();     
+          this.resetForm();
+          this.loadEmployees();     
     }});
     }
   }

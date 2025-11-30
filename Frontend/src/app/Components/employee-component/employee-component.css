@@ -5,7 +5,20 @@ table {
   background: #fff;
   font-family: 'Segoe UI', system-ui, -apple-system, sans-serif;
 }
+.search-bar {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* input on left, button on right */
+  gap: 20%; /* space between them */
+  margin-bottom: 15px;
+}
 
+.search-input {
+  flex: 1; /* make input take all remaining space */
+  padding: 8px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
 /* Table Container */
 .table-container {
   overflow-x: auto;

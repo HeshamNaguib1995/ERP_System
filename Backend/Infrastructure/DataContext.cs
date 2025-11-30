@@ -17,10 +17,16 @@ namespace Infrastructure
         public DbSet<Product> Products { get; set; }
         public DbSet<Brand> Brands { get; set; }
         public DbSet<ProductCategory> ProductCategories { get; set; }
+        public DbSet<Department> Departments { get; set; }
+        public DbSet<Attendance> Attendances { get; set; }
+        public DbSet<AttendanceMonthlySummary> AttendanceMonthlySummaries { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);
-
+            modelBuilder.Entity<Employee>()
+                        .HasIndex(e => e.Email)
+                        .IsUnique();
+                       
         }
     }
 }

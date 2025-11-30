@@ -1,4 +1,7 @@
-﻿using Application.Interfaces;
+﻿using System.Diagnostics.Eventing.Reader;
+using Application.DTOs.Requests;
+using Application.Interfaces;
+using Application.UseCases.EmpService;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -18,6 +21,20 @@ namespace Backend.Controllers
         {
             var Res = await _unitOfWork.Products.GetProductWithDetails();
             return Ok(Res);
+        }
+        [HttpDelete("DeleteProduct")]
+        public async Task<IActionResult> DeleteProductAsync(int id)
+        {
+            var product = await _unitOfWork.Products.GetByIdAsync(id);
+            if (product != null)
+            { 
+                _unitOfWork.Products.Delete(product);
+                return Ok(true); 
+            }
+            else
+            {
+                return NotFound();
+            }
         }
 
     }

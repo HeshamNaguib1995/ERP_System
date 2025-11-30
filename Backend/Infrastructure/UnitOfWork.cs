@@ -13,14 +13,21 @@ namespace Infrastructure
 
         public IEmployeeRepository Employees { get; }
         public IProductRepository Products { get; }
+
+        public IAttendanceRepository Attendances { get; }
+        public IAttendanceSummaryRepository AttendanceSummaries { get; }
         public UnitOfWork(
             DataContext context,
             IEmployeeRepository employeeRepository,
-            IProductRepository  ProductRepository)
+            IProductRepository  ProductRepository,
+            IAttendanceRepository AttendanceRepository,
+            IAttendanceSummaryRepository AttendanceSummaryRepository)
         {
             _context = context;
             Employees = employeeRepository;
             Products = ProductRepository;
+            Attendances = AttendanceRepository;
+            AttendanceSummaries = AttendanceSummaryRepository;
         }
 
         public async Task<int> SaveChangesAsync()

@@ -10,6 +10,8 @@ namespace Application.Interfaces
     {
         IEmployeeRepository Employees { get; }
         IProductRepository Products { get; }
+        IAttendanceRepository Attendances { get; }
+        IAttendanceSummaryRepository AttendanceSummaries { get; }
         Task<int> SaveChangesAsync();
 
     }
