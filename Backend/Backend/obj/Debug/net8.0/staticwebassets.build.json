@@ -1,8 +1,8 @@
 {
   "Version": 1,
-  "Hash": "+8gz7rjoDcLSTM7Kwf5qkbapKXDd97xhyAb9pxhYrew=",
-  "Source": "Backend",
-  "BasePath": "_content/Backend",
+  "Hash": "tDqGxdq0A4zT6y/tDdlw1NRTJSa30/3YTmJbD0pRBwc=",
+  "Source": "WebAPI",
+  "BasePath": "_content/WebAPI",
   "Mode": "Default",
   "ManifestType": "Build",
   "ReferencedProjectsConfiguration": [],

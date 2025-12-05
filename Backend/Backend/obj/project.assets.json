@@ -5143,9 +5143,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "E:\\ERP System\\ERP_System\\Backend\\Backend\\Backend.csproj",
-      "projectName": "Backend",
-      "projectPath": "E:\\ERP System\\ERP_System\\Backend\\Backend\\Backend.csproj",
+      "projectUniqueName": "E:\\ERP System\\ERP_System\\Backend\\Backend\\WebAPI.csproj",
+      "projectName": "WebAPI",
+      "projectPath": "E:\\ERP System\\ERP_System\\Backend\\Backend\\WebAPI.csproj",
       "packagesPath": "C:\\Users\\TOSHIBA\\.nuget\\packages\\",
       "outputPath": "E:\\ERP System\\ERP_System\\Backend\\Backend\\obj\\",
       "projectStyle": "PackageReference",

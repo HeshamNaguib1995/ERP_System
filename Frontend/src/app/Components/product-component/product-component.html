@@ -1,4 +1,15 @@
-<p>product-component works!</p>
+<div class="search-bar">
+  <input
+    type="text"
+    placeholder="Search Products..."
+    [(ngModel)]="searchText"
+    (ngModelChange)="searchData()"
+    class="search-input"
+  />
+<button (click)="openAdd()" class="add-employee-btn">
+  <i class="fas fa-plus"></i> Add Product
+</button>
+</div>
   <table>
     <thead>
       <tr>
@@ -19,14 +30,183 @@
         <td>{{ P.price }}</td>
         <td>{{ P.discount }}</td>
         <td>{{ P.brandName }}</td> 
-        <!-- <td>
-          <button (click)="GetEmployee(emp.id)" class="btn-action btn-primary">
+        <td>
+          <button (click)="GetProductById(P.id)" class="btn-action btn-primary">
             <i class="fas fa-edit"></i> Edit
           </button>
-          <button (click)="GetEmployee(emp.id)" class="btn-action btn-danger">
+          <button (click)="DeleteProduct(P.id)" class="btn-action btn-danger">
             <i class="fas fa-trash"></i> Delete
           </button>
-        </td>  -->
+        </td> 
       </tr>
     </tbody>
   </table>
+ <ng-template #EdiForm let-modal>
+  <div class="modal-form">
+    <div class="modal-header">
+      <h3 class="form-title">Edit Employee</h3>
+      <button type="button" class="close-btn" (click)="resetForm();">&times;</button>
+    </div>
+    
+    <div class="form-container">
+      <form #f="ngForm" (ngSubmit)="onEditSubmit()" class="employee-form">
+        <div class="form-fields">
+     <!-- Product Name -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="name">Product Name <span class="required">*</span></label>
+              <input id="name" name="name" [(ngModel)]="EditProduct.name" required class="form-control" placeholder="Enter product name"/>
+            </div>
+          </div>
+
+          <!-- Product Category -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="category">Category</label>
+              <select id="category" name="productCategoryId" [(ngModel)]="EditProduct.productCategoryId" class="form-control">
+                <option *ngFor="let category of Categories" [value]="category.id">{{ category.name }}</option>
+              </select>
+            </div>
+           </div>
+
+          <!-- Price -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="price">Price</label>
+              <input id="price" name="price" type="number" [(ngModel)]="EditProduct.price" class="form-control" placeholder="Enter price"/>
+            </div>
+          </div>
+
+          <!-- Discount -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="discount">Discount</label>
+              <input id="discount" name="discount" type="number" [(ngModel)]="EditProduct.discount" class="form-control" placeholder="Enter discount"/>
+            </div>
+          </div>
+
+          <!-- Image URL -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="imageUrl">Image URL</label>
+              <input id="imageUrl" name="imageUrl" [(ngModel)]="EditProduct.imageUrl" class="form-control" placeholder="Enter image URL"/>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="description">Description</label>
+              <textarea id="description" name="discription" [(ngModel)]="EditProduct.discription" class="form-control" placeholder="Enter description"></textarea>
+            </div>
+          </div>
+
+          <!-- Brand -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="brand">Brand</label>
+              <select id="brand" name="brandId" [(ngModel)]="EditProduct.brandId" class="form-control">
+                <option *ngFor="let brand of Brands" [value]="brand.id">{{ brand.name }}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <div class="form-actions">
+            <button type="button" class="btn btn-secondary" (click)="resetForm();">Cancel</button>
+            <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Save</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</ng-template>
+ <ng-template #formTemplate let-modal>
+  <div class="modal-form">
+    <div class="modal-header">
+      <h3 class="form-title">Edit Employee</h3>
+      <button type="button" class="close-btn" (click)="resetForm();">&times;</button>
+    </div>
+    
+    <div class="form-container">
+      <form #f="ngForm" (ngSubmit)="onAddSubmit()" class="employee-form">
+        <div class="form-fields">
+     <!-- Product Name -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="nameAdd">Product Name <span class="required">*</span></label>
+              <input id="nameAdd" name="name" [(ngModel)]="Product.name" required class="form-control" placeholder="Enter product name"/>
+            </div>
+          </div>
+
+          <!-- Product Category -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="category">Category</label>
+              <select id="category" name="productCategoryId" type="number" [(ngModel)]="Product.productCategoryId" class="form-control">
+                <option *ngFor="let category of Categories" [ngValue]="category.id">{{ category.name }}</option>
+              </select>
+            </div>
+           </div>
+
+          <!-- Price -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="priceAdd">Price</label>
+              <input id="priceAdd" name="price" type="number" [(ngModel)]="Product.price" class="form-control" placeholder="Enter price"/>
+            </div>
+          </div>
+
+          <!-- Discount -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="discountAdd">Discount</label>
+              <input id="discountAdd" name="discount" type="number" [(ngModel)]="Product.discount" class="form-control" placeholder="Enter discount"/>
+            </div>
+          </div>
+
+          <!-- Image URL -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="imageUrlAdd">Image URL</label>
+              <input id="imageUrlAdd" name="imageUrl" [(ngModel)]="Product.imageUrl" class="form-control" placeholder="Enter image URL"/>
+            </div>
+          </div>
+
+          <!-- Description -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="descriptionAdd">Description</label>
+              <textarea id="descriptionAdd" name="discription" [(ngModel)]="Product.discription" class="form-control" placeholder="Enter description"></textarea>
+            </div>
+          </div>
+
+          <!-- Brand -->
+          <div class="form-row">
+            <div class="form-group full-width">
+              <label for="brandAdd">Brand</label>
+              <select id="brandAdd" name="brandId" [(ngModel)]="Product.brandId" class="form-control">
+                <option *ngFor="let brand of Brands" [ngValue]="brand.id">{{ brand.name }}</option>
+              </select>
+            </div>
+          </div>
+        </div>
+
+        <div class="form-footer">
+          <div class="form-actions">
+            <button type="button" class="btn btn-secondary" (click)="resetForm();">Cancel</button>
+            <button type="submit" class="btn btn-primary" [disabled]="!f.valid">Add</button>
+          </div>
+        </div>
+      </form>
+    </div>
+  </div>
+</ng-template>
+
+<div *ngIf="openForm && !Editing" class="form-overlay">
+  <ng-container *ngTemplateOutlet="formTemplate"></ng-container>
+</div>
+<div *ngIf="Editing" class="form-overlay">
+  <ng-container *ngTemplateOutlet="EdiForm"></ng-container>
+</div> 

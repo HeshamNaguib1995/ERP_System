@@ -171,7 +171,7 @@
           <!-- positionId (number) -->
           <div class="form-row">
             <div class="form-group full-width">
-              <label for="position">Position ID</label>
+              <label for="position">Position</label>
               <select id="position" name="positionId" type="number" [(ngModel)]="EditEmployee.positionId" class="form-control" placeholder="Select position ">
                 <option *ngFor="let position of Positions" [value]="position.id">{{ position.name }}</option>
               </select>

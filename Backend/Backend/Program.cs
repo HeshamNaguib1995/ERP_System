@@ -20,11 +20,12 @@ builder.Services.AddCors(options =>
 {
     options.AddPolicy("AllowOrigin",
         policy => policy
-            .WithOrigins(builder.Configuration["FrontEndOrigin"] ?? "")
+            .WithOrigins(builder.Configuration["FrontEndOrigin"])
             .AllowAnyHeader()
             .AllowAnyMethod());
 });
 var app = builder.Build();
+app.UseRouting();
 app.UseCors("AllowOrigin");
 // Configure the HTTP request pipeline.
 if (app.Environment.IsDevelopment())

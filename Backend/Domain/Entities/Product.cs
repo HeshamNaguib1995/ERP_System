@@ -23,7 +23,7 @@ namespace Domain.Entities
         public string? ImageUrl { get; set; }
         [MaxLength(2500)]
         public string? Discription { get; set; }
-        public virtual Brand Brand { get; set; }
+        public virtual Brand? Brand { get; set; }
         public int BrandId { get; set; }
         public DateTime CreatedDate { get; set; } = DateTime.Now;
         public bool IsDeleted { get; set; } = false;

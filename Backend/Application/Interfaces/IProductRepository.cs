@@ -13,5 +13,7 @@ namespace Application.Interfaces
     {
         Task<List<ProductResponseDto>> GetProductWithDetails();
         Task<bool> UpdateProductAsync(ProductUpdate product);
+        Task<List<Brand>> GetBrandsAsync();
+        Task<List<ProductCategory>> GetProductCategoriesAsync();
     }
 }

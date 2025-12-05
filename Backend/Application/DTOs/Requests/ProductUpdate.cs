@@ -14,7 +14,6 @@ namespace Application.DTOs.Requests
         public int Id { get; set; }
         public string Name { get; set; }
         public int ProductCategoryId { get; set; }
-        public string ProductCategoryName { get; set; }
         public decimal Price { get; set; }
         public decimal discount { get; set; }
         public string? ImageUrl { get; set; }

@@ -47,9 +47,29 @@ namespace Infrastructure.Repositories
             return PrDtoList;
         }
 
-        public Task<bool> UpdateProductAsync(ProductUpdate product)
+        public async Task<bool> UpdateProductAsync(ProductUpdate product)
         {
-            throw new NotImplementedException();
+            var prod = await _context.Products.FindAsync(product.Id);
+            if (prod != null)
+            {
+                prod.Name = product.Name;
+                prod.Price = product.Price; 
+                prod.Discription = product.Discription;
+                prod.BrandId = product.BrandId;
+                prod.ImageUrl = product.ImageUrl;
+                prod.ProductCategoryId = product.ProductCategoryId;
+                await _context.SaveChangesAsync();
+                return true;
+            }
+            return false;
+        }
+        public async Task<List<Brand>> GetBrandsAsync()
+        {
+            return await _context.Brands.AsNoTracking().ToListAsync();
+        }
+        public async Task<List<ProductCategory>> GetProductCategoriesAsync()
+        {
+            return await _context.ProductCategories.AsNoTracking().ToListAsync();
         }
     }
 }
