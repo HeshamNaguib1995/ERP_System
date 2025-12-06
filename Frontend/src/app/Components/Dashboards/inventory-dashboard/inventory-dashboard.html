@@ -1,1 +1,56 @@
-<p>inventory-dashboard works!</p>
+<div class="dashboard-layout">
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <div class="profile">
+      <img src="p1.jpg" alt="Employee Photo" class="profile-img">
+      <div class="profile-info">
+        <h4 class="profile-name">John Doe</h4>
+        <p class="profile-role">Inventory Manager</p>
+      </div>
+    </div>
+
+    <ul>
+      <li [class.active]="selectedSection === 'product-management'"
+          (click)="selectSection('product-management')"
+          title="Product Management">
+        <i class="fa fa-box"></i>
+        <span class="label">Product Management</span>
+      </li>
+
+      <li [class.active]="selectedSection === 'stock-management'"
+          (click)="selectSection('stock-management')"
+          title="Stock Management">
+        <i class="fa fa-warehouse"></i>
+        <span class="label">Stock Management</span>
+      </li>
+
+      <li [class.active]="selectedSection === 'reports'"
+          (click)="selectSection('reports')"
+          title="Reports">
+        <i class="fa fa-chart-bar"></i>
+        <span class="label">Reports</span>
+      </li>
+    </ul>
+  </div>
+
+  <!-- Main Content -->
+  <div class="content">
+    <div *ngIf="selectedSection === 'product-management'">
+      <h2>📦 Product Management</h2>
+      <p>Manage your products efficiently.</p>
+       <app-product-component></app-product-component>
+     </div>
+
+    <div *ngIf="selectedSection === 'stock-management'">
+      <h2>📊 Stock Management</h2>
+      <p>Track and manage your stock levels.</p>
+      <!-- <app-stock-management></app-stock-management> -->
+    </div>
+
+    <div *ngIf="selectedSection === 'reports'">
+      <h2>📈 Reports</h2>
+      <p>View detailed reports and analytics.</p>
+      <!-- <app-reports></app-reports> -->
+    </div>
+  </div>
+</div>

@@ -292,7 +292,7 @@
         }
       }
     },
-    "/api/Product/DeleteProduct": {
+    "/api/Product/DeleteProduct/{id}": {
       "delete": {
         "tags": [
           "Product"
@@ -300,7 +300,8 @@
         "parameters": [
           {
             "name": "id",
-            "in": "query",
+            "in": "path",
+            "required": true,
             "schema": {
               "type": "integer",
               "format": "int32"

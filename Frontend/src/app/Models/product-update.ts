@@ -5,6 +5,6 @@ export interface ProductUpdate {
     price: number;
     discount: number;
     imageUrl: string | null;
-    discription: string | null;
+    description: string | null;
     brandId: number;
 }

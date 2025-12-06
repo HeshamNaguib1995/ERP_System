@@ -5,4 +5,6 @@ export interface Product {
   price: number
   discount: number
   brandName: string
+  imageUrl: string | null
+  description: string | null
 }

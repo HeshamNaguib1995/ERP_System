@@ -20,6 +20,9 @@ namespace Infrastructure
         public DbSet<Department> Departments { get; set; }
         public DbSet<Attendance> Attendances { get; set; }
         public DbSet<AttendanceMonthlySummary> AttendanceMonthlySummaries { get; set; }
+        public DbSet<Customer> customers { get; set; }
+        public DbSet<SalesOrder> SalesOrders { get; set; }
+        public DbSet<SalesOrderItem> salesOrderItems { get; set; }
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             base.OnModelCreating(modelBuilder);

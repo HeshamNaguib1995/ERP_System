@@ -54,7 +54,7 @@ namespace Infrastructure.Repositories
             {
                 prod.Name = product.Name;
                 prod.Price = product.Price; 
-                prod.Discription = product.Discription;
+                prod.description = product.description;
                 prod.BrandId = product.BrandId;
                 prod.ImageUrl = product.ImageUrl;
                 prod.ProductCategoryId = product.ProductCategoryId;

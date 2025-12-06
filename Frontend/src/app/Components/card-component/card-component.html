@@ -1,0 +1,18 @@
+<div class="card">
+  <img [src]="product.imageUrl" alt="product-img" class="card-img" />
+
+  <div class="card-content">
+    <h3 class="desc">{{ product.description }}</h3>
+
+    <div class="price-section">
+      <span class="price">Price: {{ product.price | currency:'USD' }}</span>
+
+      <span class="discount">Discount: {{ product.discount }}%</span>
+
+      <div class="final-price">
+        Final Price: {{ finalPrice | currency:'USD' }}
+      </div>
+    </div>
+  </div>
+</div>
+

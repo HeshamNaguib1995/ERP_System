@@ -175,7 +175,7 @@
   {
     "ContainingType": "Backend.Controllers.ProductController",
     "Method": "DeleteProductAsync",
-    "RelativePath": "api/Product/DeleteProduct",
+    "RelativePath": "api/Product/DeleteProduct/{id}",
     "HttpMethod": "DELETE",
     "IsController": true,
     "Order": 0,
@@ -183,7 +183,7 @@
       {
         "Name": "id",
         "Type": "System.Int32",
-        "IsRequired": false
+        "IsRequired": true
       }
     ],
     "ReturnTypes": []

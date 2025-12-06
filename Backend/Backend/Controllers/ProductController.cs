@@ -29,13 +29,15 @@ namespace Backend.Controllers
             var Res = await _unitOfWork.Products.GetByIdAsync(id);
             return Ok(Res);
         }
-        [HttpDelete("DeleteProduct")]
+        [HttpDelete("DeleteProduct/{id}")]
         public async Task<IActionResult> DeleteProductAsync(int id)
         {
             var product = await _unitOfWork.Products.GetByIdAsync(id);
             if (product != null)
             { 
                 _unitOfWork.Products.Delete(product);
+                await _unitOfWork.SaveChangesAsync();
+                var res = await _unitOfWork.Products.GetAllAsync();
                 return Ok(true); 
             }
             else

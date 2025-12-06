@@ -11,7 +11,7 @@ export class DashboardFactoryService {
     HR: HrDashboard,
     Finance: FinanceDashboard,
     Sales: SalesDashboard,
-    Admin: InventoryDashboard
+    Inventory: InventoryDashboard
   };
 
   getDashboard(role: string): Type<any> | null {
