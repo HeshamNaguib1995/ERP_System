@@ -4,10 +4,11 @@ import { EmployeeComponent } from './Components/employee-component/employee-comp
 import { SignUp } from './Components/sign-up/sign-up';
 import { DashboardLoader } from './Components/Dashboards/dashboard-loader/dashboard-loader';
 import { ProductComponent } from './Components/product-component/product-component';
+import { LandingPage } from './Components/landing-page/landing-page';
 export const routes: Routes = [
     {
         path: '',
-        redirectTo: 'Employees',
+        redirectTo: 'Main',
         pathMatch: 'full'
     },
     {
@@ -29,6 +30,10 @@ export const routes: Routes = [
     {
         path: 'Products',
         component: ProductComponent
+    },
+    {
+        path: 'Main',
+        component: LandingPage
     }
 
 ];

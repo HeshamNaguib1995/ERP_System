@@ -542,7 +542,7 @@
             "type": "string",
             "nullable": true
           },
-          "discription": {
+          "description": {
             "maxLength": 2500,
             "type": "string",
             "nullable": true
@@ -613,7 +613,7 @@
             "type": "string",
             "nullable": true
           },
-          "discription": {
+          "description": {
             "type": "string",
             "nullable": true
           },
