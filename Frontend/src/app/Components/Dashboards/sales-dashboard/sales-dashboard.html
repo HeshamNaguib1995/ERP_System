@@ -17,11 +17,18 @@
         <span class="label">Customer Management</span>
       </li>
 
-      <li [class.active]="selectedSection === 'store'"
-          (click)="selectSection('store')"
-          title="Store">
-        <i class="fas fa-store"></i>
-        <span class="label">Store</span>
+      <li [class.active]="selectedSection === 'orders'"
+          (click)="selectSection('orders')"
+          title="Orders">
+        <i class="fas fa-shopping-cart"></i>
+        <span class="label">Orders</span>
+      </li>
+
+      <li [class.active]="selectedSection === 'invoices'"
+          (click)="selectSection('invoices')"
+          title="Invoices">
+        <i class="fas fa-file-invoice"></i>
+        <span class="label">Invoices</span>
       </li>
     </ul>
   </div>
@@ -34,10 +41,16 @@
       <!-- Add customer management component here -->
     </div>
 
-    <div *ngIf="selectedSection === 'store'">
-      <h2>🏬 Store</h2>
-      <p>Manage store inventory, sales, and operations.</p>
-      <!-- Add store management component here -->
+    <div *ngIf="selectedSection === 'orders'">
+      <h2>🛒 Orders</h2>
+      <p>Track and manage customer orders.</p>
+      <!-- Add orders management component here -->
+    </div>
+
+    <div *ngIf="selectedSection === 'invoices'">
+      <h2>📄 Invoices</h2>
+      <p>View and manage invoices for completed orders.</p>
+      <app-invoice-component></app-invoice-component>
     </div>
   </div>
 </div>

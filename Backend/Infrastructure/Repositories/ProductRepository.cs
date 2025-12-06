@@ -35,6 +35,8 @@ namespace Infrastructure.Repositories
             PrDto.ProductCategoryName = Pr.ProductCategory.Name;
             PrDto.Id = Pr.Id;
             PrDto.discount = Pr.discount;
+            PrDto.description = Pr.description;
+            PrDto.ImageUrl = Pr.ImageUrl;
             return PrDto;
         }
         public List<ProductResponseDto> ProductListMapping(List<Product> PrList)

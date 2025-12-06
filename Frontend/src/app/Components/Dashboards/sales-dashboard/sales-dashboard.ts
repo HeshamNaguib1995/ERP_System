@@ -1,9 +1,10 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { InvoiceComponent } from '../../invoice-component/invoice-component';
 
 @Component({
   selector: 'app-sales-dashboard',
-  imports: [CommonModule],
+  imports: [CommonModule, InvoiceComponent],
   templateUrl: './sales-dashboard.html',
   styleUrls: ['./sales-dashboard.css'],
 })

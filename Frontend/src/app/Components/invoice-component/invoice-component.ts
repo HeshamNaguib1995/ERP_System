@@ -23,6 +23,7 @@ export class InvoiceComponent implements OnInit {
   ngOnInit(): void {
     this.productService.getProducts().subscribe((data) => {
       this.products = data;
+      console.log('Products fetched:', this.products);
     });
   }
   applySearch() {

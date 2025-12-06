@@ -17,5 +17,7 @@ namespace Application.DTOs.Responses
         public decimal Price { get; set; }
         public decimal discount { get; set; }
         public string BrandName { get; set; }
+        public string? ImageUrl { get; set; }
+        public string? description { get; set; }
     }
 }

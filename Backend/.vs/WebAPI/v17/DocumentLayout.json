@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "E:\\ERP System\\ERP_System\\Backend\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|e:\\erp system\\erp_system\\backend\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|e:\\erp system\\erp_system\\backend\\infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\erp_system\\backend\\application\\dtos\\responses\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|solutionrelative:application\\dtos\\responses\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\WebAPI.csproj|e:\\erp system\\erp_system\\backend\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\WebAPI.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -23,16 +35,8 @@
       "RelativeMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|e:\\erp system\\erp_system\\backend\\infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{3E5C6D70-99DF-4BB3-84BF-F25FCBBC33D0}|Infrastructure\\Infrastructure.csproj|solutionrelative:infrastructure\\repositories\\productrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\erp_system\\backend\\application\\dtos\\requests\\productupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|solutionrelative:application\\dtos\\requests\\productupdate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|e:\\erp system\\erp_system\\backend\\domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{EDABD666-BE63-46D0-9C74-A0EFE1D92104}|Domain\\Domain.csproj|solutionrelative:domain\\entities\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{B1148A94-619B-42FA-ADEF-93BA45EC08D4}|Backend\\WebAPI.csproj|e:\\erp system\\erp_system\\backend\\backend\\controllers\\employeecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -100,10 +104,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\erp_system\\backend\\application\\interfaces\\iattendancesummaryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|solutionrelative:application\\interfaces\\iattendancesummaryrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\erp_system\\backend\\application\\dtos\\responses\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|solutionrelative:application\\dtos\\responses\\productresponsedto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A9A41722-6114-4DD5-AC93-2E6D5C756C11}|Application\\Application.csproj|e:\\erp system\\erp_system\\backend\\application\\interfaces\\iunitofwork.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -213,7 +213,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Bookmark",
@@ -221,43 +221,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 49,
-              "Title": "20251206045925_SalesSysteminitialize.cs",
-              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Migrations\\20251206045925_SalesSysteminitialize.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251206045925_SalesSysteminitialize.cs",
-              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Migrations\\20251206045925_SalesSysteminitialize.cs",
-              "RelativeToolTip": "Infrastructure\\Migrations\\20251206045925_SalesSysteminitialize.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T04:59:25.299Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "SalesOrderItem.cs",
-              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\SalesOrderItem.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\SalesOrderItem.cs",
-              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\SalesOrderItem.cs",
-              "RelativeToolTip": "Domain\\Entities\\SalesOrderItem.cs",
-              "ViewState": "AgIAAAkAAAAAAAAAAAAAwA8AAAANAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T04:40:27.125Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "SalesOrder.cs",
-              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\SalesOrder.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\SalesOrder.cs",
-              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\SalesOrder.cs",
-              "RelativeToolTip": "Domain\\Entities\\SalesOrder.cs",
-              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBUAAABcAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-06T04:39:22.054Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 7,
               "Title": "Customer.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\Customer.cs",
               "RelativeDocumentMoniker": "Domain\\Entities\\Customer.cs",
@@ -281,7 +245,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "Program.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Backend\\Program.cs",
               "RelativeDocumentMoniker": "Backend\\Program.cs",
@@ -294,7 +258,82 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 2,
+              "Title": "ProductResponseDto.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\DTOs\\Responses\\ProductResponseDto.cs",
+              "RelativeDocumentMoniker": "Application\\DTOs\\Responses\\ProductResponseDto.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Application\\DTOs\\Responses\\ProductResponseDto.cs",
+              "RelativeToolTip": "Application\\DTOs\\Responses\\ProductResponseDto.cs",
+              "ViewState": "AgIAAAcAAAAAAAAAAAAawBMAAAAtAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T00:58:24.068Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Product.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\Product.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\Product.cs",
+              "RelativeToolTip": "Domain\\Entities\\Product.cs",
+              "ViewState": "AgIAABEAAAAAAAAAAADwvxUAAAAYAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-05T02:31:45.636Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "ProductRepository.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\ProductRepository.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Repositories\\ProductRepository.cs",
+              "RelativeToolTip": "Infrastructure\\Repositories\\ProductRepository.cs",
+              "ViewState": "AgIAACQAAAAAAAAAAAAgwDYAAAAdAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-11-15T00:44:20.334Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "SalesOrder.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\SalesOrder.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\SalesOrder.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\SalesOrder.cs",
+              "RelativeToolTip": "Domain\\Entities\\SalesOrder.cs",
+              "ViewState": "AgIAAAsAAAAAAAAAAAAAwBUAAABcAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T04:39:22.054Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "SalesOrderItem.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\SalesOrderItem.cs",
+              "RelativeDocumentMoniker": "Domain\\Entities\\SalesOrderItem.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\SalesOrderItem.cs",
+              "RelativeToolTip": "Domain\\Entities\\SalesOrderItem.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAAAwA8AAAANAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T04:40:27.125Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 49,
+              "Title": "20251206045925_SalesSysteminitialize.cs",
+              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Migrations\\20251206045925_SalesSysteminitialize.cs",
+              "RelativeDocumentMoniker": "Infrastructure\\Migrations\\20251206045925_SalesSysteminitialize.cs",
+              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Migrations\\20251206045925_SalesSysteminitialize.cs",
+              "RelativeToolTip": "Infrastructure\\Migrations\\20251206045925_SalesSysteminitialize.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-12-06T04:59:25.299Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "EmployeeService.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\UseCases\\EmpService\\EmployeeService.cs",
               "RelativeDocumentMoniker": "Application\\UseCases\\EmpService\\EmployeeService.cs",
@@ -306,7 +345,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "DataContext.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\DataContext.cs",
               "RelativeDocumentMoniker": "Infrastructure\\DataContext.cs",
@@ -330,19 +369,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "ProductRepository.cs",
-              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Repositories\\ProductRepository.cs",
-              "RelativeDocumentMoniker": "Infrastructure\\Repositories\\ProductRepository.cs",
-              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Repositories\\ProductRepository.cs",
-              "RelativeToolTip": "Infrastructure\\Repositories\\ProductRepository.cs",
-              "ViewState": "AgIAAC0AAAAAAAAAAAAowDsAAAAjAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T00:44:20.334Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "UnitOfWork.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\UnitOfWork.cs",
               "RelativeDocumentMoniker": "Infrastructure\\UnitOfWork.cs",
@@ -354,7 +381,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "ProductUpdate.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\DTOs\\Requests\\ProductUpdate.cs",
               "RelativeDocumentMoniker": "Application\\DTOs\\Requests\\ProductUpdate.cs",
@@ -366,19 +393,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "Product.cs",
-              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\Product.cs",
-              "RelativeDocumentMoniker": "Domain\\Entities\\Product.cs",
-              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Domain\\Entities\\Product.cs",
-              "RelativeToolTip": "Domain\\Entities\\Product.cs",
-              "ViewState": "AgIAABAAAAAAAAAAAAA7wBoAAAAkAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-12-05T02:31:45.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "EmployeeController.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Backend\\Controllers\\EmployeeController.cs",
               "RelativeDocumentMoniker": "Backend\\Controllers\\EmployeeController.cs",
@@ -390,7 +405,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "ProductController.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Backend\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Backend\\Controllers\\ProductController.cs",
@@ -398,11 +413,12 @@
               "RelativeToolTip": "Backend\\Controllers\\ProductController.cs",
               "ViewState": "AgIAAB0AAAAAAAAAAAAUwC4AAAAIAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-26T18:50:41.662Z"
+              "WhenOpened": "2025-11-26T18:50:41.662Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "GenericRepository.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\Repositories\\GenericRepository.cs",
               "RelativeDocumentMoniker": "Infrastructure\\Repositories\\GenericRepository.cs",
@@ -414,7 +430,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "IProductRepository.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\Interfaces\\IProductRepository.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IProductRepository.cs",
@@ -426,7 +442,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Microsoft.Common.CurrentVersion.targets",
               "DocumentMoniker": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
               "ToolTip": "C:\\Program Files\\Microsoft Visual Studio\\2022\\Community\\MSBuild\\Current\\Bin\\amd64\\Microsoft.Common.CurrentVersion.targets",
@@ -436,7 +452,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "IBrandRepository.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\Interfaces\\IBrandRepository.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IBrandRepository.cs",
@@ -448,7 +464,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "IProductCategoryRepository.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\Interfaces\\IProductCategoryRepository.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IProductCategoryRepository.cs",
@@ -460,7 +476,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "AuthService.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\UseCases\\AuthService\\AuthService.cs",
               "RelativeDocumentMoniker": "Application\\UseCases\\AuthService\\AuthService.cs",
@@ -472,7 +488,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "IAuthService.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\UseCases\\AuthService\\IAuthService.cs",
               "RelativeDocumentMoniker": "Application\\UseCases\\AuthService\\IAuthService.cs",
@@ -484,7 +500,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "TokenService.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\UseCases\\TokenService\\TokenService.cs",
               "RelativeDocumentMoniker": "Application\\UseCases\\TokenService\\TokenService.cs",
@@ -496,7 +512,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "ITokenService.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\UseCases\\TokenService\\ITokenService.cs",
               "RelativeDocumentMoniker": "Application\\UseCases\\TokenService\\ITokenService.cs",
@@ -508,7 +524,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "Application.csproj",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\Application.csproj",
               "RelativeDocumentMoniker": "Application\\Application.csproj",
@@ -532,7 +548,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "StartUp.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Infrastructure\\StartUp.cs",
               "RelativeDocumentMoniker": "Infrastructure\\StartUp.cs",
@@ -544,7 +560,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "IAttendanceSummaryRepository.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\Interfaces\\IAttendanceSummaryRepository.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IAttendanceSummaryRepository.cs",
@@ -556,7 +572,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "IAttendanceRepository.cs",
               "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\Interfaces\\IAttendanceRepository.cs",
               "RelativeDocumentMoniker": "Application\\Interfaces\\IAttendanceRepository.cs",
@@ -577,18 +593,6 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAlAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-11-15T01:54:21.522Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 25,
-              "Title": "ProductResponseDto.cs",
-              "DocumentMoniker": "E:\\ERP System\\ERP_System\\Backend\\Application\\DTOs\\Responses\\ProductResponseDto.cs",
-              "RelativeDocumentMoniker": "Application\\DTOs\\Responses\\ProductResponseDto.cs",
-              "ToolTip": "E:\\ERP System\\ERP_System\\Backend\\Application\\DTOs\\Responses\\ProductResponseDto.cs",
-              "RelativeToolTip": "Application\\DTOs\\Responses\\ProductResponseDto.cs",
-              "ViewState": "AgIAAAUAAAAAAAAAAAAqwAwAAAAFAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-11-15T00:58:24.068Z"
             },
             {
               "$type": "Document",
