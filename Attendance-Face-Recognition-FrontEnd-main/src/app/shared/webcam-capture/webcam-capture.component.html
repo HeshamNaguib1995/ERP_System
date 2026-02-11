@@ -1,0 +1,15 @@
+<div class="webcam-wrapper">
+  <div *ngIf="webcamError" class="error">{{ webcamError }}</div>
+  <webcam
+    [trigger]="triggerObservable"
+    (imageCapture)="handleImage($event)"
+    (initError)="handleInitError($event)"
+  ></webcam>
+  <div class="controls">
+    <button type="button" (click)="triggerSnapshot()">Capture</button>
+  </div>
+  <div *ngIf="lastImageUrl" class="preview">
+    <p>Last capture:</p>
+    <img [src]="lastImageUrl" alt="snapshot" />
+  </div>
+</div>

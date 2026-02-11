@@ -1,0 +1,36 @@
+<div class="card-header">
+  <div>
+    <h2>Employees</h2>
+    <p class="subtitle">View all registered employees in the system</p>
+  </div>
+  <button class="btn btn-secondary" (click)="load()" [disabled]="loading">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M21.5 2V8M21.5 8H15.5M21.5 8L18 4.5C16.7429 3.24286 15.1767 2.35682 13.4612 1.93411C11.7456 1.5114 9.94719 1.56763 8.26035 2.09611C6.57351 2.62459 5.06356 3.60632 3.89302 4.93853C2.72248 6.27074 1.93591 7.90416 1.61 9.66" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M2.5 22V16M2.5 16H8.5M2.5 16L6 19.5C7.25714 20.7571 8.82334 21.6432 10.5388 22.0659C12.2544 22.4886 14.0528 22.4324 15.7397 21.9039C17.4265 21.3754 18.9364 20.3937 20.107 19.0615C21.2775 17.7293 22.0641 16.0958 22.39 14.34" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    Refresh
+  </button>
+</div>
+
+<div *ngIf="loading" class="loading-container">Loading employees...</div>
+
+<div *ngIf="!loading && errorMsg" class="error-message">
+  {{ errorMsg }}
+</div>
+
+<ul *ngIf="!loading && !errorMsg" class="employees-list">
+  <li *ngFor="let e of employees" class="employee-card">
+    <div class="employee-avatar">{{ getInitials(e.employee_name) }}</div>
+    <div class="employee-info">
+      <div class="employee-name">{{ e.employee_name }}</div>
+      <div class="employee-id">{{ e.employee_id }}</div>
+    </div>
+  </li>
+  <li *ngIf="employees.length === 0" class="empty-state">
+    <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+      <path d="M17 21V19C17 17.9391 16.5786 16.9217 15.8284 16.1716C15.0783 15.4214 14.0609 15 13 15H5C3.93913 15 2.92172 15.4214 2.17157 16.1716C1.42143 16.9217 1 17.9391 1 19V21" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+      <path d="M9 11C11.2091 11 13 9.20914 13 7C13 4.79086 11.2091 3 9 3C6.79086 3 5 4.79086 5 7C5 9.20914 6.79086 11 9 11Z" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    </svg>
+    <p>No employees enrolled yet</p>
+  </li>
+</ul>

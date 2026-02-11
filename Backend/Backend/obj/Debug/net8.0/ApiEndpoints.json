@@ -157,6 +157,22 @@
     "ReturnTypes": []
   },
   {
+    "ContainingType": "Backend.Controllers.LoginController",
+    "Method": "AuthLogin",
+    "RelativePath": "api/Login/AuthLogin",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "request",
+        "Type": "Application.DTOs.Requests.LoginRequestDto",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
     "ContainingType": "Backend.Controllers.ProductController",
     "Method": "AddProductAsync",
     "RelativePath": "api/Product/AddProduct",

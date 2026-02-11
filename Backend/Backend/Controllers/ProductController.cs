@@ -3,6 +3,7 @@ using Application.DTOs.Requests;
 using Application.Interfaces;
 using Application.UseCases.EmpService;
 using Domain.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Http;
 using Microsoft.AspNetCore.Mvc;
 
@@ -24,6 +25,7 @@ namespace Backend.Controllers
             return Ok(Res);
         }
         [HttpGet("GetProductById/{id}")]
+        [Authorize]
         public async Task<IActionResult> GetProductCategoriesAsync(int id)
         {
             var Res = await _unitOfWork.Products.GetByIdAsync(id);

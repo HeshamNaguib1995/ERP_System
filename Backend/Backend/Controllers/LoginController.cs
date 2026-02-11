@@ -11,10 +11,12 @@ namespace Backend.Controllers
     public class LoginController : ControllerBase
     {
         private readonly IAuthService _authService;
-        public LoginController(IAuthService authService)
+        private readonly LoginHandler _handler;
+        public LoginController(IAuthService authService, LoginHandler handler)
         {
-            _authService = authService;
-        }   
+            _authService = authService;            _handler = handler;
+        }
+         
 
         [HttpPost("Authenticate")]
         public IActionResult Login([FromBody] SignInRequest request)
@@ -26,5 +28,12 @@ namespace Backend.Controllers
             }
             return Ok( new { Name = Rs } );
         }
+        [HttpPost("AuthLogin")]
+        public async Task<IActionResult> AuthLogin([FromBody] LoginRequestDto request)
+        {
+            var res = await _handler.Handle(request);
+            return Ok( res );
+        }
+
     }
 }

@@ -3,7 +3,11 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using Application.DTOs.Requests;
+using Application.DTOs.Responses;
+using Application.DTOs.Service;
 using Application.Interfaces;
+using Domain.Entities;
 
 namespace Application.UseCases.AuthService
 {
@@ -14,10 +18,12 @@ namespace Application.UseCases.AuthService
         {
             _authRepo = authRepo;
         }
+
         public string GetEmployeeDepartment(string username, string password)
         {
             return _authRepo.GetEmployeeDepartment(username, password);
         }
+
 
         public Task<bool> RevokeAllTokensAsync(Guid userId, string ipAddress)
         {
